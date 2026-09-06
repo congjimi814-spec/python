@@ -10,5 +10,8 @@ while True:
         break
     sum = sum + int(a)
 count = count - 1
-average = sum/count
-print("平均值为：",average)
+if count == 0:
+    print("0")
+else:
+    average = sum/count
+    print("平均值为：",average)
