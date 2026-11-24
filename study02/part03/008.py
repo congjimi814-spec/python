@@ -29,14 +29,19 @@ print(s_1_pop)      #删除的元素
 s_1.clear()
 print(s_1)
 
-# difference()      求两集合的差集(含1不含2)
+# difference()      求两集合的差集(含1不含2)   -
 s_1 = {1,2,3,4}
 s_2 = {3,4,5,6}
 print(s_1.difference(s_2))
 print(s_2.difference(s_1))
 
-# union()           求两集合并集
+# union()           求两集合并集   |
 print(s_1.union(s_2))
 
-# intersection()    求两集合交集
+# intersection()    求两集合交集  &
 print(s_1.intersection(s_2))
+
+
+# 集合推导式写法
+# 变量名称 = {i表达式 for i in 列表}
+# 变量名称 = {i表达式 for i in 列表 if 条件}
